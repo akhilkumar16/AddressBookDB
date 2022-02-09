@@ -44,3 +44,10 @@ select COUNT(state) from AddressBook;
 
 select state, count(*) as AddressCount
 from AddressBook group by (state);
+--UC8:- Ability to retrieve entries sorted alphabetically by Person’s name for a given city.
+select * from AddressBook order by city ASC;  
+select * from AddressBook where city = 'mumbai'
+order by (firstName);
+
+select * from AddressBook where city = 'banglore'
+order by (firstName);
