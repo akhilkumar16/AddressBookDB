@@ -51,3 +51,11 @@ order by (firstName);
 
 select * from AddressBook where city = 'banglore'
 order by (firstName);
+--UC9.2:- Here the type could Family, Friends, Profession, etc.
+update AddressBook set Name='ShreeRam';
+
+update AddressBook set Type ='Friend' where firstName='rohit' or firstName='sharma';
+select * from AddressBook;
+
+update AddressBook set Type ='Family' where firstName='virat' or firstName='kholi'; 
+select * from AddressBook;
