@@ -21,3 +21,9 @@ values('Virat','Kholi','agdfj','banglore','karnataka','123456','123456897','vira
 select * from AddressBook;
 
 insert into AddressBook values('rohit','sharma','hagdfj','mumbai','maharastra','124563','152462358','rohit@gmail.com');
+--UC4:- Ability to edit existing contact person using their name.
+update AddressBook set zip=2152145 where firstName='rohit';
+select * from AddressBook;
+
+update AddressBook set email='sharma@gmail.com' where firstName='rohit';
+select * from AddressBook;
